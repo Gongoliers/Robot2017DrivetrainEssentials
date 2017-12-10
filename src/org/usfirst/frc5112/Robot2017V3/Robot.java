@@ -24,7 +24,7 @@ public class Robot extends IterativeRobot {
 
 	public static OI oi;
 	public static Drivetrain drivetrain;
-	public static Scaler scaler;
+//	public static Scaler scaler;
 	public SendableChooser<Command> chooser;
 
 	/**
@@ -34,7 +34,7 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		RobotMap.init();
 		drivetrain = new Drivetrain();
-		scaler = new Scaler();
+//		scaler = new Scaler();
 		chooser = new SendableChooser<>();
 
 		chooser.addDefault("Do nothing", new DoNothing());

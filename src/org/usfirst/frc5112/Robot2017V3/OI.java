@@ -12,10 +12,10 @@ import org.usfirst.frc5112.Robot2017V3.commands.DrivetrainCommands.RotateClockwi
 import org.usfirst.frc5112.Robot2017V3.commands.DrivetrainCommands.RotateCounterclockwise;
 import org.usfirst.frc5112.Robot2017V3.commands.DrivetrainCommands.StopDrivetrain;
 import org.usfirst.frc5112.Robot2017V3.commands.DrivetrainCommands.SwitchYSign;
-import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.DecreaseScalerSpeedManual;
-import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.IncreaseScalerSpeedManual;
-import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.ScalerUp;
-import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.StopScaler;
+//import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.DecreaseScalerSpeedManual;
+//import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.IncreaseScalerSpeedManual;
+//import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.ScalerUp;
+//import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.StopScaler;
 import org.usfirst.frc5112.Robot2017V3.commands.autoCommands.DriveForwardLine;
 
 /*import org.usfirst.frc5112.Robot2017V3.commands.TargetingCommands.BoilerCameraEnable;
@@ -80,11 +80,11 @@ public class OI {
 //		SmartDashboard.putData("EnablePegCam", new PegCameraEnable());
     	
 		// SmartDashboard - Scaler
-		SmartDashboard.putNumber("ScalerSpeedDisplay", Robot.scaler.scalerSpeed);
-		SmartDashboard.putData("IncreaseScalerSpeed", new IncreaseScalerSpeedManual());
-		SmartDashboard.putData("DecreaseScalerSpeed", new DecreaseScalerSpeedManual());
-		SmartDashboard.putData("ScalerUp", new ScalerUp(0));
-		SmartDashboard.putData("StopScaler", new StopScaler());
+//		SmartDashboard.putNumber("ScalerSpeedDisplay", Robot.scaler.scalerSpeed);
+//		SmartDashboard.putData("IncreaseScalerSpeed", new IncreaseScalerSpeedManual());
+//		SmartDashboard.putData("DecreaseScalerSpeed", new DecreaseScalerSpeedManual());
+//		SmartDashboard.putData("ScalerUp", new ScalerUp(0));
+//		SmartDashboard.putData("StopScaler", new StopScaler());
 		
     	//Command Groups
 		SmartDashboard.putData("Autonomous Command", new DriveForwardLine());
@@ -105,9 +105,9 @@ public class OI {
 //		xbox.DPAD_LEFT.whileActive(new ScalerUp());					// LEFT BUTTON climbs the rope
 //		xbox.DPAD_RIGHT.whileActive(new AlignWithPeg());				// RIGHT BUTTON climbs the rope
 		
-		xbox.Y.whileHeld(new ScalerUp(.35));						// Y BUTTON stops the intake
-		xbox.A.whileHeld(new ScalerUp(1.0));					// A BUTTON stops the drivetrain
-		xbox.X.whenPressed(new StopScaler());						// X BUTTON stops the scaler
+//		xbox.Y.whileHeld(new ScalerUp(.35));						// Y BUTTON stops the intake
+//		xbox.A.whileHeld(new ScalerUp(1.0));					// A BUTTON stops the drivetrain
+//		xbox.X.whenPressed(new StopScaler());						// X BUTTON stops the scaler
 
 	}
 

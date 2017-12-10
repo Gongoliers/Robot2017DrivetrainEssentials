@@ -1,7 +1,7 @@
 package org.usfirst.frc5112.Robot2017V3.commands;
 
 import org.usfirst.frc5112.Robot2017V3.commands.DrivetrainCommands.StopDrivetrain;
-import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.StopScaler;
+//import org.usfirst.frc5112.Robot2017V3.commands.ScalerCommands.StopScaler;
 
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
@@ -31,7 +31,7 @@ public class StopEverything extends CommandGroup {
         // arm.
 
     	addParallel(new StopDrivetrain());
-        addParallel(new StopScaler());
+//        addParallel(new StopScaler());
 
     } 
 }
